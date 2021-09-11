@@ -197,7 +197,7 @@ jobs:
         find -name "*vmlinuz*" | xargs -i mv -f {} packages
         find -name "*esxi.vmdk*" | xargs -i mv -f {} packages
         find -name "*Image*" | xargs -i mv -f {} packages
-        find -name "*rootfs-squashfs*" | xargs -i mv -f {} packages
+        find -name "*rootfs.img*" | xargs -i mv -f {} packages
         find -name "*efi.img*" | xargs -i mv -f {} packages
         find -name "*json*" | xargs -i mv -f {} packages
         rm -rf packages
