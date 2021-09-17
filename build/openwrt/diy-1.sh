@@ -15,4 +15,3 @@
 # lede源码增加passwall,也适用于增加其他插件的方法
 sed -i '$a src-git passwall https://github.com/xiaorouji/openwrt-passwall' feeds.conf.default
 git clone https://github.com/jerrykuku/luci-app-jd-dailybonus.git package/luci-app-jd-dailybonus
-git clone https://github.com/small-5/luci-app-adblock-plus package/openwrt-packages/luci-app-adblock-plus
