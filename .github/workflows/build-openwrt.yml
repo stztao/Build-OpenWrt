@@ -200,6 +200,8 @@ jobs:
         find -name "*rootfs.img*" | xargs -i mv -f {} packages
         find -name "*efi.img*" | xargs -i mv -f {} packages
         find -name "*json*" | xargs -i mv -f {} packages
+        find -name "*ext4-combined.img*" | xargs -i mv -f {} packages
+        find -name "*rootfs.tar.gz*" | xargs -i mv -f {} packages
         rm -rf packages
         echo "FIRMWARE=$PWD" >> $GITHUB_ENV
         echo "::set-output name=status::success"
