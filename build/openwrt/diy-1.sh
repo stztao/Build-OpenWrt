@@ -13,6 +13,7 @@
 #sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 
 # lede源码增加passwall,也适用于增加其他插件的方法
+sed -i '$a src-git helloworld https://github.com/fw876/helloworld.git' feeds.conf.default
 sed -i '$a src-git passwall https://github.com/xiaorouji/openwrt-passwall' feeds.conf.default
 sed -i '$a src-git luci_passwall https://github.com/xiaorouji/openwrt-passwall.git;luci' feeds.conf.default
 sed -i '$a src-git mosdns https://github.com/sbwml/luci-app-mosdns' feeds.conf.default
